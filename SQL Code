@@ -1,0 +1,23 @@
+# The following tis the code used to extract Data from the data base.
+# Data Brick is where we have stored our data whcih is individual files containg sensor readings from the vessels.
+# AKA Kongsberg Data.
+
+
+
+  SELECT [vessel_name]
+      ,[vessel_class]
+      ,[datetime_utc]
+      ,[sog]
+      ,[me_power]
+      ,[me_rpm]
+      ,[heading]
+	  ,[apparent_wind_dir_degree]
+	  ,[me_consumption_kg_h]
+      ,[apparent_wind_speed_kn]
+      ,[mean_draft_aft_vessel]
+      ,[mean_draft_fore_vessel]
+      ,[vessel_condition]
+  FROM [enriched_data].[vessel_signal_data]
+  WHERE (vessel_class = ('DUCHESSA'))
+   AND
+    (datetime_utc BETWEEN '2015-07-01' AND '2021-12-31');
