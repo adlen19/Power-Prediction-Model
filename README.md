@@ -4,6 +4,6 @@ This model encompasses various data science techniques to arrive at a predicted 
 
 Althouyght the end goal is to predict Fuel consumptions, the project is broken down into two parts just to ave a deeper understnading on how diffrent permutaion and combinations of attributes selected for prediction actually affect the prediction. 
 
-Hence, you will bee two models:
+Hence, you will be seeing two models:
 Power prediction 
 and Fuel prediction.
